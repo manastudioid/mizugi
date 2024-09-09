@@ -10,6 +10,8 @@ define('COLORS_LIST', array(
     'info' => '#0dcaf0',
     'light' => '#f8f9fa',
     'dark' => '#212529',
+    'white' => '#ffffff',
+    'black' => '#000000',
 ));
 
 define('STEP_LIST', array(
@@ -22,8 +24,8 @@ define('STEP_LIST', array(
 ));
 
 define('DIRECTION_LIST', array(
-    'left' => 'left',
-    'top' => 'top',
-    'right' => 'right',
-    'bottom' => 'bottom',
+    'l' => 'left',
+    't' => 'top',
+    'r' => 'right',
+    'b' => 'bottom',
 ));
