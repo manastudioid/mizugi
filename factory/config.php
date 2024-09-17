@@ -6,4 +6,5 @@ error_reporting(E_ALL);
 date_default_timezone_set('Asia/Jakarta');
 
 define('OUTPUT_FILENAME', 'mizugi');
+define('APP_URL', 'http://localhost/mizugi');
  

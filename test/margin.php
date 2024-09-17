@@ -1,30 +1,38 @@
-<h3>Margin</h3>
-<hr>
+<section id="margin">
+  <h1>Margin</h1>
+  <hr>
 <h5>Margin</h5>
-<hr>
 <?php
+$code = '';
 foreach(STEP_LIST as $step_no => $value) 
 {
-?>
-<div class="p-2">
-    <span class="border-3">.border-3</span>
-    <span class="border-3 m-<?=$step_no?>">.border-3 .m-<?=$step_no?></span>
-    <span class="border-3">.border-3</span>
-</div>
-<?php
+    $code = '
+    <div class="p-2">
+        <span class="border-3">.border-3</span>
+        <span class="border-3 m-'.$step_no.'">.border-3 .m-'.$step_no.'</span>
+        <span class="border-3">.border-3</span>
+    </div>
+    ';   
+    echo codeBlock($code); 
+    echo codePreview($code);
 }
+
 ?>
 <h5>Margin Direction</h5>
-<hr>
 <?php
-foreach(DIRECTION_LIST as $direction_name => $value)  
+$code = '';
+foreach(DIRECTION_LIST as $direction_name => $value) 
 {
-?>
-<div class="p-2">
-    <span class="border-3">.border-3</span>
-    <span class="border-3 m<?=$direction_name?>-3">.border-3 .m<?=$direction_name?>-3</span>
-    <span class="border-3">.border-3</span>
-</div>
-<?php    
+    $code = '
+    <div class="p-2">
+        <span class="border-3">.border-3</span>
+        <span class="border-3 m'.$direction_name.'-3">.border-3 .m'.$direction_name.'-3</span>
+        <span class="border-3">.border-3</span>
+    </div>
+    ';   
+    echo codeBlock($code); 
+    echo codePreview($code);
 }
+
 ?>
+</section>
